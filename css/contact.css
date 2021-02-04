@@ -1,0 +1,303 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  color: #454851;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#add8e6), color-stop(60%, #f5f5f5));
+  background-image: -o-linear-gradient(#add8e6, #f5f5f5 60%);
+  background-image: linear-gradient(#add8e6, #f5f5f5 60%);
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  background-color: #009fb7;
+}
+header .logo {
+  position: relative;
+  top: 4px;
+  right: 20px;
+  width: 30%;
+  height: auto;
+}
+header nav .navCont {
+  display: none;
+}
+
+.navLinks {
+  display: none;
+}
+
+.navCollapse {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  width: 100%;
+  min-height: 20vh;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #009fb7;
+  -webkit-box-shadow: 0 1px 2px #454851;
+          box-shadow: 0 1px 2px #454851;
+}
+.navCollapse a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  padding: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1.5rem;
+}
+
+.fixed {
+  -webkit-box-shadow: #454851 0px 2px 4px;
+          box-shadow: #454851 0px 2px 4px;
+}
+
+.title {
+  padding: 2rem 1rem;
+  background-color: #009fb7;
+  color: #f5f5f5;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.title h1 {
+  font-size: 3rem;
+}
+.title p {
+  font-size: 1.5rem;
+}
+
+.contact {
+  width: 90%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact div h2 {
+  font-size: 2rem;
+}
+.contact div p {
+  font-size: 1.5rem;
+}
+.contact div p span {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.contact form {
+  background-color: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact form input {
+  padding: 1rem;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+.contact form #message {
+  height: 10vh;
+  padding: 1rem;
+  outline: none;
+  resize: vertical;
+  font-family: "Montserrat", sans-serif;
+}
+.contact form div {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact form div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.contact form div div #yes, .contact form div div #no {
+  margin: 0 0.5rem 0 0;
+}
+.contact form #send {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #fed766;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  padding: 0.3rem 1rem;
+  -webkit-box-shadow: 0 1px 2.5px #454851;
+          box-shadow: 0 1px 2.5px #454851;
+  cursor: pointer;
+}
+.contact form #send:hover {
+  -webkit-box-shadow: 0 1px 5px #454851;
+          box-shadow: 0 1px 5px #454851;
+}
+
+/*  xxsmall devices (phones, 300px and below) */
+/* Extra small devices (phones, 375px and up) */
+@media only screen and (min-width: 375px) {
+  header .logo {
+    width: 10rem;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  header {
+    height: 4.5rem;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header nav {
+    width: 45rem;
+  }
+  header nav .navIcon {
+    display: none;
+  }
+  header nav .navCont {
+    margin-right: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav .navCont a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #f5f5f5;
+  }
+
+  .contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contact div {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 60%;
+  }
+  .contact div p {
+    text-align: justify;
+    text-indent: 3rem;
+  }
+  .contact form {
+    margin-left: 5rem;
+    padding: 2rem 4rem;
+  }
+  .contact form input {
+    width: 100%;
+  }
+  .contact form #message {
+    height: 20vh;
+  }
+  .contact form div div #yes, .contact form div div #no {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}

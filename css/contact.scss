@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+/* variables */
+$font:'Montserrat', sans-serif;
+$font2: 'Inconsolata', monospace;
+$color1: #f5f5f5;
+$color2:#009fb7;
+$color3:#fed766;
+$color4:#454851;
+
+*{
+    box-sizing:border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-size:62.5%;
+    font-family:$font;
+    color:$color4;
+}
+body {
+    width:100%;
+    margin:0;
+    min-height:100vh;
+    background-image:linear-gradient(#add8e6,$color1 60%);
+}
+header {
+    position:sticky;
+    top:0;
+    display:flex;
+    height:4rem;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 1rem;
+    background-color:$color2;
+     .logo {
+        position: relative;
+        top:4px;
+        right:20px;
+        width:30%;
+        height:auto;
+     }
+     nav {   
+        .navCont {
+            display:none;
+        }
+    }
+}
+.navLinks {
+   display:none;
+}
+.navCollapse {
+   position:sticky;
+   top:4rem;
+   width:100%;
+   min-height: 20vh;
+   padding-bottom: 1rem;
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   justify-content:space-between;
+   background-color: $color2;
+   box-shadow:0 1px 2px $color4;
+   a {
+    width:fit-content;
+    display:block;
+    padding:10px 5px;
+    display:flex;
+    font-weight:bolder;
+    text-align:center;
+    text-decoration:none;
+    color:$color1;
+    font-size:1.5rem;
+    }
+}
+.fixed {
+    box-shadow: $color4 0px 2px 4px;
+   }
+.title {
+    padding:2rem 1rem;
+    background-color: $color2;
+    color:$color1;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    h1{
+        font-size:3rem;
+    }
+    p {
+        font-size:1.5rem;
+    }
+}
+.contact {
+    width:90%;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding:2rem 0;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    div{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    h2 {
+        font-size:2rem;
+    }
+    p {
+        font-size: 1.5rem;
+        span {
+            text-align: center;
+            font-size:1.8rem;
+            font-weight: bold;
+        }
+    }
+}
+    form {
+        background-color: white;
+        border-radius:1rem;
+        box-shadow:0px 3px 8px rgba(0,0,0,0.2);
+        margin-top:2rem;
+        padding:1.5rem;
+        display:flex;
+        flex-direction: column;
+        input {
+            padding:1rem;
+            outline:none;
+            font-family: $font;
+        }
+        #message {
+            height:10vh;
+            padding:1rem;
+            outline:none;
+            resize:vertical;
+            font-family: $font;
+        }
+        div {
+            width:90%;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            div {
+                display: flex;
+                flex-direction: row;
+                #yes,#no {
+                    margin:0 0.5rem 0 0;
+                }
+            }
+        }
+        #send {
+            margin-top:2rem;
+            margin-bottom:1rem;
+            padding:1rem;
+            width:100%;
+            align-self: center;
+            background-color:$color3;
+            font-size:1.5rem;
+            border:none;
+            outline:none;
+            padding:0.3rem 1rem;
+            box-shadow:0 1px 2.5px $color4;
+            cursor: pointer;
+        }
+        #send:hover {
+            box-shadow: 0 1px 5px $color4;
+        }
+        }
+    }
+/*  xxsmall devices (phones, 300px and below) */
+@media only screen and (max-width: 300px) {} 
+/* Extra small devices (phones, 375px and up) */
+@media only screen and (min-width: 375px) {
+    header .logo {
+        width:10rem;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header {
+        height:4.5rem;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header {
+        nav {
+            width:45rem;
+        .navIcon {
+            display:none;
+        }
+        .navCont {
+            margin-right:5rem;
+            display:flex;
+            justify-content:space-between;
+            a {
+            text-decoration: none;
+            font-size:1.3rem;
+            color:$color1;
+            }
+        }
+    }
+}
+.contact {
+    flex-direction:row;
+    justify-content: space-around;
+    div {
+        align-items: flex-start;
+        width:60%;
+        p {
+            text-align: justify;
+            text-indent:3rem;
+        }
+    }
+    form {
+        margin-left:5rem;
+        padding:2rem 4rem;
+        input {
+            width:100%;
+        }
+        #message {
+            height:20vh;
+        }
+        div {
+            div {
+                #yes,#no {
+                    width:fit-content;
+                }
+            }
+        }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
